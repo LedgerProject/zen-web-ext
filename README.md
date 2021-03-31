@@ -4,7 +4,7 @@ Web extensions encapsulating Zenroom functionality
 In order to test the web extension, we provide the test static file `index.html`. You need to serve this file from a local webserver (please access is as `localhost:<your port>`, the port does not matter for the web extension).
 
 If you want to host it somewhere else you need to replace `example.org` with that url in the file `manifest.json`.
-The page refers to a non-existing url `http://localhost/check_login/` just to show the functionality of the web extension in enabling and disabling the login button and signing the challenge contained as hiddend field in the page (you can inspect the html code to see how it works).
+The page refers to a non-existing form url `http://localhost/check_login/` just to show the functionality of the web extension in enabling and disabling the login button and signing the challenge contained as hidden field in the page (you can inspect the html code to see how it works).
 
 ## Build the web extension
 
