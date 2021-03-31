@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "zenextroom",
   "description": "Embed Zenroom functionality in a web extension",
   "homepage_url": "https://github.com/LedgerProject/zen-web-ext",

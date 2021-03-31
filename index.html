@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://localhost:8000/consent/login/?next=/consent/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>GeneCoop</title>
+    <link rel="stylesheet" type="text/css" href="./index_files/login.css">
+</head>
+
+<body>
+
+
+    
+
+    <!-- Credit https://codepen.io/danzawadzki/pen/EgqKRr  -->
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active">Welcome</h2>
+            <div id="no-zenextroom-plugin">
+                <p class="instruction">You need zenextroom add-on to login.<br>
+                    Please follow the instructions to install it.</p>
+            </div>
+            <div id="yes-zenextroom-plugin" style="display: none;visibility: hidden;">
+                <p id="instruction" class="instruction">Please 'Login' from your zenextroom add-on.<br></p>
+                <!-- Login Form -->
+                <form action="http://localhost/check_login/" method="post">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="RCBmWH6eymtTqy5XOX7OXo1uSywogUJwgG5O1EdIMe2zki1r8mnOOxXdoFcYJxqD">
+                    <input type="hidden" id="challenge" name="challenge" value="VudnPw0I9yvIPbgXcdtgrwT+1dTmrZOritl/gR61WGX2efilut2tvvZGJMZDDt+p4G1iKKjh66i9X0pmn8GDSQ==">
+                    <input type="hidden" id="response" class="fadeIn third" name="response" value="">
+                    <input type="hidden" id="user_id" class="fadeIn third" name="user_id" value="">
+                    <input id="proceedButton" type="submit" class="fadeIn fourth" style="visibility:hidden;" value="Proceed">
+                </form>
+            </div>
+            <div class="fadeIn first">
+                <img src="./index_files/logo_64.png" id="icon" alt="GeneCoop">
+            </div>
+            <br>
+        </div>
+    </div>
+
+    
+</body></html>
