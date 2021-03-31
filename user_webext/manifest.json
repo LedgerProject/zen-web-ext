@@ -1,0 +1,45 @@
+{
+  "manifest_version": 1,
+  "name": "zenextroom",
+  "description": "Embed Zenroom functionality in a web extension",
+  "homepage_url": "https://github.com/LedgerProject/zen-web-ext",
+  "version": "0.0.1",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ledger@dyne.org"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "icons": {
+    "64": "icons/logo_64.png"
+  },
+  "background": {
+    "scripts": [
+      "background_script.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://example.org/*",
+        "http://localhost/*"
+      ],
+      "js": ["content_script.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "64": "icons/logo_64.png"
+    },
+    "default_popup": "browserAction/popup.html",
+    "default_title": "zenextroom"
+  },
+  "options_ui": {
+    "page": "options/options.html"
+  },
+  "web_accessible_resources": [
+  ]
+}
