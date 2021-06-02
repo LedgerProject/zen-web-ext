@@ -8,7 +8,7 @@ The page refers to a non-existing form url `http://localhost/check_login/` just 
 
 ## Build the web extension
 
-In order to build a development version of the web extension, and save it to your Downloads directory, do the following:
+In order to build a development version of the web extension, clone this repo (or save it to your Downloads directory) and do the following:
 
 ### Build environment
 
@@ -20,11 +20,8 @@ $ cd zenpage
 $ npm install -g browserify
 $ ./prepair_bundle.sh
 $ cd ..
-```
-### Build web extension
-
-```
-$ web-ext build --a ~/Downloads -n zenextroom.zip 
+$ npm install -g web-ext 
+$ web-ext build --a . -n zenextroom.zip 
 ```
 ### Install web extension
 
