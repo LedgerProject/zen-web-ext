@@ -41,7 +41,9 @@ This will launch an instance of Firefox with the web extension installed (please
 Fill in a username (not used at the moment), your public and private key, and click save.
 
 ### Test web extension
-To test if the configuration is correct, navigate to locahost:<your port>, and click on the extension; you should see two buttons: 'login' and 'sign'. At the moment only sing is demonstrated by the example page `index.html`.
+To test the extension locally, you'll need to to serve the `index.html` file (in the root folder) with a web server. 
+Then navigate to locahost:<your port>/index.html, and click on the extension; you should see two buttons: 'login' and 'sign'. 
+At the moment only the "log in" is demonstrated by the example page `index.html`.
 
 ## Build a signed self-hosted web extension
 To build a signed, downloadable self hosted version of the webextension:
