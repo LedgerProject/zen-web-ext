@@ -13,9 +13,11 @@ In order to build a development version of the web extension, and save it to you
 ### Build environment
 
 ```
+$ cd zen-web-ext
 $ cd zenextroom
 $ npm install
 $ cd zenpage
+$ npm install -g browserify
 $ ./prepair_bundle.sh
 $ cd ..
 ```
